@@ -5,4 +5,4 @@ config = ConfigParser.SafeConfigParser()
 config.read('./config.ini')
 
 name =  config.get('fruit', 'name')
-price =  config.get('fruit', 'price')
+price =  float(config.get('fruit', 'price'))
